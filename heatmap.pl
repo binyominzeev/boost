@@ -6,7 +6,9 @@ use Data::Dumper;
 
 # ========== parameters ==========
 
-my $dir="../archive/aps";
+#my $dir="../local_behaviour/11-node-weights/archive/aps";
+my $dir="../../aps";
+
 my $cite_scale=13;
 my $time_scale=6;
 
@@ -124,7 +126,7 @@ sub log_base {
 	if ($num > 0) {
 		return log($num)/log($base);
 	} else {
-		return 0;
+		return -1;
 	}
 }
 
